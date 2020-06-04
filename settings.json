@@ -1,6 +1,5 @@
 {
-  // ### WorkBench ###
-
+  //### WorkBench ###
   // Tema
   "workbench.colorTheme": "Dracula",
   // Icones da IDE
@@ -9,17 +8,13 @@
   "workbench.startupEditor": "newUntitledFile",
   // Exibe na Tab a pasta que esta aberta alem do nome do arquivo
   "workbench.editor.labelFormat": "short",
-
   // ### Editor de Codigo ###
-
   // Fonte do codigo
   "editor.fontFamily": "Fira Code, Dank Mono, Operator Mono, Inconsolata, Menlo",
   // Usado para fazer a ligacao dos simbolos da fonte Fira Code
   "editor.fontLigatures": true,
   // Tamanho fonte do codigo
   "editor.fontSize": 13,
-  // Formatar ao salvar
-  "editor.formatOnSave": true,
   // Espacamento entre as letras
   "editor.letterSpacing": 0.5,
   // Desabilitar mini map
@@ -29,37 +24,53 @@
   // Indicador de linha selecionada fica apenas no numero da linha
   "editor.renderLineHighlight": "gutter",
   // Numero de linhas maxima 80, maximo do maximo 120
-  "editor.rulers": [80, 120],
-
+  "editor.rulers": [
+    80,
+    120
+  ],
   // ### Explorer ###
-
   // Desabilita o enfileiramento das pastas vazias
   "explorer.compactFolders": false,
-
   // ### Terminal ###
-
   // Definica do Hypper como terminal padrao
   "terminal.external.osxExec": "iTerm.app",
   // Fonte
-  "terminal.integrated.fontFamily": "furamono NF",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
   // Tamanho da font
   "terminal.integrated.fontSize": 14,
-
   // ### Outras ###
-
   // Remove a recomendacao de um plugin quando identifica o tipo de arquivo
   "extensions.ignoreRecommendations": true,
-
   // Atualizadao do import quando o arquivo Typescipt é movido
   "typescript.updateImportsOnFileMove.enabled": "always",
   // Atualizadao do import quando o arquivo Javascript é movido
   "javascript.updateImportsOnFileMove.enabled": "always",
-
   // Faz com o que o VSCode Identifique as Tags do React
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-
   // Remocao da barra de navegacao acima do conteudo
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "todo-tree.tree.showScanModeButton": false,
+  //Ao salvar corrigir os erros de codigo referente ao eslint
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  }
 }
