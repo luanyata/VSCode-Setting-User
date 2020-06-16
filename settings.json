@@ -1,5 +1,5 @@
 {
-  //### WorkBench ###
+  // ### WorkBench ###
   // Tema
   "workbench.colorTheme": "Dracula",
   // Icones da IDE
@@ -13,6 +13,10 @@
   "editor.fontFamily": "Fira Code, Dank Mono, Operator Mono, Inconsolata, Menlo",
   // Usado para fazer a ligacao dos simbolos da fonte Fira Code
   "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
   // Tamanho fonte do codigo
   "editor.fontSize": 13,
   // Espacamento entre as letras
@@ -66,11 +70,31 @@
   "[typescript]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
-    }
+    },
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescriptreact]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     }
+  },
+  // Configuração icones de arquivos e pasta
+  "material-icon-theme.folders.associations": {
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "websockets": "pipe"
+  },
+  "material-icon-theme.files.associations": {
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune"
   }
 }
